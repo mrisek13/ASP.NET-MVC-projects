@@ -1,0 +1,50 @@
+﻿@model PAUP_Vj2.Models.Student
+
+@{
+    ViewBag.Title = "Student";
+}
+
+<h2>Student</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.godina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.godina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.spol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.spol)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
