@@ -1,0 +1,27 @@
+﻿@model VjezbaRazor.Models.Product
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "ProductWeb";
+}
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>My First Heading</h1>
+
+    <p>My first paragraph.</p>
+
+    <div>
+        <h2>Naziv artikla</h2>
+        @Model.Naziv
+    </div>
+
+    <h1>Trenutno vrijeme</h1>
+    <p>@ViewBag.Pozdrav - želim svima!!!</p>
+
+</body>
+</html>
+
+
